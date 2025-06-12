@@ -34,7 +34,7 @@ There's a lot of templates out there showing you how to run React-Router and Hon
 
 There's been great work put into [react-router-hono-server](https://github.com/rphlmr/react-router-hono-server) and [remix-hono](https://github.com/sergiodxa/remix-hono). But, as of June 2025, those solutions aren't ideal for hosting on Cloudflare Workers.
 
-A comment by [agcty](https://github.com/agcty) in one of these repos actually pointed out that recent developments in Cloudflare, Vite and React Router have made it much easier to configure this set up. This repository makes it easier to get a project started with this stack and makes it (hopefully) easier to discover that this is how to set this up.
+[Agcty](https://github.com/agcty) [actually pointed out that it's really simple to configure RR + Hono + Cloudflare](https://github.com/rphlmr/react-router-hono-server/issues/115#issuecomment-2787089066), in light of recent developments in Cloudflare, Vite and React Router have made it much easier to configure this set up. This repository makes it easier to get a project started with this stack and makes it (hopefully) easier to discover that this is how to set this up.
 
 This project is very simple. It's just the [original deployment template for Cloudflare and React Router ](https://github.com/remix-run/react-router-templates/tree/main/cloudflare) with a small change to use Hono to serve the React Router project, allowing Hono routes to take effect and fallback to React Router:
 
